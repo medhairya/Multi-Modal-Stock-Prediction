@@ -11,9 +11,11 @@ model_name = "ProsusAI/finbert"
 
 save_path = "E:/FinBERT/ProsusAI-finbert"
 
+# Download
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModel.from_pretrained(model_name)
 
+# Save locally
 tokenizer.save_pretrained(save_path)
 model.save_pretrained(save_path)
 
